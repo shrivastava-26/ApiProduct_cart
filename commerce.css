@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.parent{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header{
+    display: flex;
+    border: 2px solid;
+    height: 10%;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    background-image: linear-gradient(rgb(244, 151, 218), rgb(167, 135, 133), rgb(188, 107, 181));
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.parent-cart{
+    display: flex;
+    justify-content: end;
+    padding-top: 4em;
+
+}
+
+#cart-section{
+    border: 3px solid purple;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+    z-index: 5;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 4em;
+    bottom: 0;
+    background-color: antiquewhite;  
+    border-radius: 5px; 
+}
+
+#cart-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: darkgreen;
+    /* position: absolute; */
+    z-index: 5;
+    top: 7em;
+    
+}
+
+#cart-section > button{
+    width: 80px;
+    height: 40px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+
+
+.nav > ul {
+    display: flex;
+    line-height: 3;
+    font-size: 20px;
+    gap: 10px;
+
+}
+
+.nav > ul > li > a{
+    text-decoration:none ;
+    color: black;
+}
+
+#search{
+    display: inline-flex;
+    justify-content: center;  
+    padding-top: 0.3em;
+}
+
+#input{
+    width: 35vw;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 30px;
+    /* color: brown; */
+}
+
+
+.last{
+    display: flex;
+    flex-direction: column;
+}
+
+#card{
+    width: 80vw;
+    display: flex;
+    flex-flow: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+.footer{
+    display: flex;
+}
+
+/* ! innerHtml */
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 8px 4px gray;
+    border-radius: 10px;
+    width: 25%;
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background-color: rgb(207, 224, 224);
+}
+
+.hello > button{
+    width: 80px;
+    height: 40px;
+    margin: auto;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hello > img{
+    width: 40%;
+    height:50%;
+    transition: ease-in;
+    margin: auto;
+}

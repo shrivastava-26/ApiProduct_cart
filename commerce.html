@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>E-Commerce</title>
+        <link rel="stylesheet" href="commerce.css">
+    </head>
+
+    <body>
+       <div class="parent">
+
+        <!-- !header -->
+        <div class="header">
+            <!-- !logo -->
+            <div class="logo">
+                <h1 style="text-align: center; color: brown; line-height:2;">Commerce</h1>
+            </div>
+
+            <!-- !search product -->
+            <div id="search">
+                <input type="text" id="input" placeholder="Search Products">
+            </div>
+
+            <!-- ! navbar -->
+            <nav class="nav">
+               
+            </nav>
+
+        </div>
+
+
+        <div class="parent-cart">
+            <div id="cart-section">
+                <h2 style="position:fixed; top:1em;">Your Cart</h2>
+                <div id="cart-items"></div>
+                <p id="total-price">Total Price: $0</p>
+                <button onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+              
+
+        <!--! Body  -->
+
+        <div id="card">
+            
+        </div>
+
+
+       </div>
+    </body>
+
+    <script src="commerce.js"></script>
+</html>
